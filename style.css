@@ -1,0 +1,126 @@
+@font-face { font-family: 'Open'; src: url('webfonts/opensans-regular-webfont.eot'); src: url('webfonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/opensans-regular-webfont.woff') format('woff'), url('webfonts/opensans-regular-webfont.ttf') format('truetype'), url('webfonts/opensans-regular-webfont.svg#open_sansregular') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenBold'; src: url('webfonts/opensans-bold-webfont.eot'); src: url('webfonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/opensans-bold-webfont.woff') format('woff'), url('webfonts/opensans-bold-webfont.ttf') format('truetype'), url('webfonts/opensans-bold-webfont.svg#open_sansbold') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenLight'; src: url('webfonts/opensans-light-webfont.eot'); src: url('webfonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/opensans-light-webfont.woff') format('woff'), url('webfonts/opensans-light-webfont.ttf') format('truetype'), url('webfonts/opensans-light-webfont.svg#open_sanslight') format('svg'); font-weight: normal; font-style: normal; }
+
+body { font-family: 'OpenLight'; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+header { float: left; width: 100%; position: relative; background: #fff; z-index: 15; }
+header h3 { color: #9ca1a8; margin: 8px 12px; font-size: 14px; font-weight: normal; }
+header img { float: left; margin: 20px; }
+header .bottomShadow { float: left; width: 100%; position: absolute; height: 5px; background: url(images/header_bottom_shadow.png) no-repeat center center; bottom: -5px; left: 0; }
+
+.mainContent { position: relative; z-index: 10; background: #e3e3e3; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UzZTNlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  #e3e3e3 0%, #ffffff 14%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3e3e3), color-stop(14%,#ffffff)); background: -webkit-linear-gradient(top,  #e3e3e3 0%,#ffffff 14%); background: -o-linear-gradient(top,  #e3e3e3 0%,#ffffff 14%); background: -ms-linear-gradient(top,  #e3e3e3 0%,#ffffff 14%); background: linear-gradient(to bottom,  #e3e3e3 0%,#ffffff 14%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#ffffff',GradientType=0 ); float: left; width: 100%; }
+.dashboard .mainContent h1 { float: left; width: 100%; text-align: center; margin: 28px 0 21px 0; font-size: 22px; color: #310D57; line-height: 30px; font-weight: normal; }
+.dashboard .mainContent h1 strong { font-weight: normal; font-family: 'Open'; }
+.dashboard .mainContent .blocks { margin: 0 26px; }
+.dashboard .mainContent .blocks a { width: 100px; padding: 10px 14px; float: left; color: #fff; font-size: 15px; text-decoration: none; height: 55px; background: #90278C url(images/dashboard_blocks_arrow.png) no-repeat 15px 54px; background-size: 5px 8px; -webkit-background-size: 5px 8px; -moz-background-size: 5px 8px; -o-background-size: 5px 8px; line-height: 19px;}
+.dashboard .mainContent .blocks a:hover { background-color: #7C247C; }
+.dashboard .mainContent .blocks a.blue { float: right; background-color: #310D57; }
+.dashboard .mainContent .blocks a.blue:hover { background-color: #1D0738; }
+.dashboard .mainContent > a { color: #310D57; text-decoration: none; font-size: 16px; float: left; width: 100%; margin: 15px 0 0 0; text-align: center; }
+.dashboard .mainContent > a img { margin: -1px 0 0 11px; }
+.dashboard .mainContent > a:hover { text-decoration: underline; }
+.dashboard footer { position: relative; float: left; width: 100%; margin-top: 15px; z-index: 5; text-align: center; padding: 0; height: auto; }
+.dashboard footer .blueBar { background: #310D57; float: left; width: 100%; position: relative; }
+.dashboard footer .blueBar .topShadow { float: left; width: 100%; top: 0; left: 0; background: url(images/dashboard_footer_shadow.png) no-repeat center center; height: 5px; position: absolute; }
+.dashboard footer .blueBar img { float: left; margin: 15px 20px; margin-top: 17px; }
+.dashboard footer .blueBar img.rightLogo { float: right; margin-top: 15px; }
+
+.explore .mainContent { float: left; width: 100%; }
+.explore .wheel { position: relative; margin-top: 60px; width: 329px; float: left; height: 250px; margin-left: -9px; }
+.explore .wheel .bottomShadow { float: left; width: 100%; position: absolute; height: 6px; background: url(images/wheel_bottom_shadow.png) no-repeat center center; bottom: 0; left: 0; }
+.explore .wheel a { position: absolute; color: #fff; text-decoration: none; font-size: 9px; z-index: 100; width: 110px; overflow: hidden; outline: 0; -webkit-tap-highlight-color: transparent; }
+.explore .wheel .selected a { font-family: 'OpenBold'; }
+.explore .wheel .red { position: absolute; width: 156px; height: 94px; background-size: 150px 90px; -webkit-background-size: 150px 90px; -moz-background-size: 150px 90px; -o-background-size: 150px 90px; background-position: top right; background-image: url(images/wheel_red.png); top: 116px; left: 13px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .red.selected { background-image: url(images/wheel_red_s.png); background-size: 156px 94px; -webkit-background-size: 156px 94px; -moz-background-size: 156px 94px; -o-background-size: 156px 94px; }
+.explore .wheel .red a { top: 28px; left: 22px; -webkit-transform: rotate(-26deg); -moz-transform: rotate(-26deg); -o-transform: rotate(-26deg); writing-mode: lr-tb; }
+.explore .wheel .orange { position: absolute; width: 158px; height: 73px; background-size: 153px 70px; -webkit-background-size: 153px 70px; -moz-background-size: 153px 70px; -o-background-size: 153px 70px; background-position: top right; background-image: url(images/wheel_orange.png); top: 70px; left: 11px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .orange.selected { background-image: url(images/wheel_orange_s.png); background-size: 158px 73px; -webkit-background-size: 158px 73px; -moz-background-size: 158px 73px; -o-background-size: 158px 73px; top: 68px; }
+.explore .wheel .orange a { top: 35px; left: 16px; }
+.explore .wheel .orange.selected a { top: 37px; }
+.explore .wheel .yellow { position: absolute; width: 150px; height: 113px; background-size: 144px 109px; -webkit-background-size: 144px 109px; -moz-background-size: 144px 109px; -o-background-size: 144px 109px; background-position: top right; background-image: url(images/wheel_yellow.png); top: 8px; left: 19px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .yellow.selected { background-image: url(images/wheel_yellow_s.png); background-size: 150px 113px; -webkit-background-size: 150px 113px; -moz-background-size: 150px 113px; -o-background-size: 150px 113px; top: 4px; }
+.explore .wheel .yellow a { top: 59px; left: 22px; -webkit-transform: rotate(29deg); -moz-transform: rotate(29deg); -o-transform: rotate(29deg); writing-mode: lr-tb; }
+.explore .wheel .yellow.selected a { top: 62px; }
+.explore .wheel .green { position: absolute; width: 109px; height: 151px; background-size: 105px 145px; -webkit-background-size: 105px 145px; -moz-background-size: 105px 145px; -o-background-size: 105px 145px; background-position: top right; background-image: url(images/wheel_green.png); top: -28px; left: 60px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .green.selected { background-image: url(images/wheel_green_s.png); background-size: 109px 151px; -webkit-background-size: 109px 151px; -moz-background-size: 109px 151px; -o-background-size: 109px 151px; top: -34px; }
+.explore .wheel .green a { top: 70px; left: 12px; -webkit-transform: rotate(59deg); -moz-transform: rotate(59deg); -o-transform: rotate(59deg); writing-mode: lr-tb; }
+.explore .wheel .green.selected a { left: 10px; }
+.explore .wheel .lightBlue { position: absolute; width: 76px; height: 157px; background-size: 73px 151px; -webkit-background-size: 73px 151px; -moz-background-size: 73px 151px; -o-background-size: 73px 151px; background-position: top right; background-image: url(images/wheel_light-blue.png); top: -34px; left: 125px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .lightBlue.selected { background-image: url(images/wheel_light-blue_s.png); background-size: 76px 157px; -webkit-background-size: 76px 157px; -moz-background-size: 76px 157px; -o-background-size: 76px 157px; top: -39px;
+left: 126px; }
+.explore .wheel .lightBlue a { top: 64px; left: -16px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); writing-mode: lr-tb; }
+.explore .wheel .darkBlue { position: absolute; width: 100px; height: 154px; background-size: 96px 148px; -webkit-background-size: 96px 148px; -moz-background-size: 96px 148px; -o-background-size: 96px 148px; background-position: top right; background-image: url(images/wheel_dark-blue.png); top: -30px; left: 165px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .darkBlue.selected { background-image: url(images/wheel_dark-blue_s.png); background-size: 100px 154px; -webkit-background-size: 100px 154px; -moz-background-size: 100px 154px; -o-background-size: 100px 154px; top: -37px; left: 169px; }
+.explore .wheel .darkBlue a { top: 32px; left: 1px; -webkit-transform: rotate(-65deg); -moz-transform: rotate(-65deg); -o-transform: rotate(-65deg); writing-mode: lr-tb; }
+.explore .wheel .darkBlue.selected a { top: 39px; left: -3px; }
+.explore .wheel .pink { position: absolute; width: 145px; height: 121px; background-size: 140px 117px; -webkit-background-size: 140px 117px; -moz-background-size: 140px 117px; -o-background-size: 140px 117px; background-position: top right; background-image: url(images/wheel_pink.png); top: 0; left: 164px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .pink.selected { background-image: url(images/wheel_pink_s.png); background-size: 145px 121px; -webkit-background-size: 145px 121px; -moz-background-size: 145px 121px; -o-background-size: 145px 121px; top: -4px; left: 169px; }
+.explore .wheel .pink a { top: 46px; left: 38px; -webkit-transform: rotate(-36deg); -moz-transform: rotate(-36deg); -o-transform: rotate(-36deg); writing-mode: lr-tb; }
+.explore .wheel .pink.selected a { top: 52px; left: 31px; }
+.explore .wheel .purple { position: absolute; width: 158px; height: 75px; background-size: 152px 72px; -webkit-background-size: 152px 72px; -moz-background-size: 152px 72px; -o-background-size: 152px 72px; background-position: top right; background-image: url(images/wheel_purple.png); top: 58px; left: 163px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .purple.selected { background-image: url(images/wheel_purple_s.png); background-size: 158px 75px; -webkit-background-size: 158px 75px; -moz-background-size: 158px 75px; -o-background-size: 145px 121px; top: 56px;
+left: 167px; }
+.explore .wheel .purple a { top: 39px; left: 71px; -webkit-transform: rotate(-6deg); -moz-transform: rotate(-6deg); -o-transform: rotate(-6deg); writing-mode: lr-tb; width: 70px; }
+.explore .wheel .purple.selected a { top: 41px; }
+.explore .wheel .grey { position: absolute; width: 157px; height: 83px; background-size: 151px 80px; -webkit-background-size: 151px 80px; -moz-background-size: 151px 80px; -o-background-size: 151px 80px; background-position: top right; background-image: url(images/wheel_grey.png); top: 116px; left: 163px; background-position: top right; background-repeat: no-repeat; }
+.explore .wheel .grey.selected { background-image: url(images/wheel_grey_s.png); background-size: 157px 83px; -webkit-background-size: 157px 83px; -moz-background-size: 157px 83px; -o-background-size: 157px 83px; top: 116px;
+left: 167px; }
+.explore .wheel .grey a { top: 26px; left: 44px; -webkit-transform: rotate(18deg); -moz-transform: rotate(18deg); -o-transform: rotate(18deg); writing-mode: lr-tb; }
+.explore .wheel .grey.selected a { top: 25px; left: 38px; }
+.explore .controls { position: absolute; bottom: 30px; left: 0; width: 100%; text-align: center; }
+.explore .controls p { margin: 0; margin-left: 14px; font-size: 14px; line-height: 21px; color: #3A4353; }
+.explore .controls a { background: url(images/wheel_controls_arrows.png) no-repeat; background-position: top left; background-size: 24px 20px; -webkit-background-size: 24px 20px; -moz-background-size: 24px 20px; -o-background-size: 24px 20px; text-indent: -9999px; width: 12px; height: 20px; top: 15px; left: 91px; }
+.explore .controls a#next { background-position: top right; left: 241px; }
+.explore .contentArea > div { display: none; }
+.explore .contentArea > div.show { display: block; }
+.standard .contentArea { float: left; width: 86%; padding: 20px 7%; background: #fff; }
+.standard.explore .contentArea { padding: 25px 7%; }
+.standard .contentArea h1 { color: #90278C; font-size: 20px; margin: 0 0 12px 0; }
+.standard .contentArea h4 { font-size: 13px; line-height: 20px; color: #3A4353; margin: 0 0 20px 0; font-family: 'OpenBold'; }
+.standard .contentArea h6 { font-size: 14px; line-height: 21px; color: #3A4353; margin: 0 0 20px 0; }
+.standard .contentArea p { font-size: 13px; line-height: 19px; color: #3A4353; margin: 0 0 20px 0; }
+.standard .contentArea ul { margin: 0 0 20px; padding: 0; list-style: none; }
+.standard .contentArea ul li { font-size: 12px; line-height: 19px; color: #3A4353; margin: 0 0 15px 0; background: url(images/content_tick_list.jpg) no-repeat left 5px; padding-left: 30px; }
+.standard.explore .contentArea p { margin-bottom: 0; }
+.standard .contentArea a.more { color: #90278C; float: right; text-decoration: none; font-size: 16px; line-height: 14px; padding-right: 18px; background: url(images/explore_link_arrow.png) no-repeat right 1px; background-size: 7px 12px; -webkit-background-size: 7px 12px; -moz-background-size: 7px 12px; -o-background-size: 7px 12px; }
+.standard .contentArea a.more:hover { text-decoration: underline; }
+.standard .headerImage, .standard .headerImage img { float: left; width: 100%; position: relative; }
+.standard .headerImage .bottomShadow { float: left; width: 100%; bottom: 0; left: 0; background: url(images/header_image_bottom_shadow.png) no-repeat center center; height: 11px; position: absolute; }
+
+footer { float: left; width: 100%; background: #EFEFEF; position: relative; z-index: 10; padding: 10px 0; height: 16px; }
+.introduction footer { margin-top: 50px; }
+footer > .topShadow { float: left; width: 100%; top: 0; left: 0; background: url(images/footer_top_shadow.png) no-repeat center center; height: 3px; position: absolute; }
+footer .homeIcon { position: absolute; bottom: 0; left: 0; }
+footer .homeIcon:hover, footer .exploreIcon:hover { opacity: 0.9; }
+footer .exploreIcon { position: absolute; bottom: 0; right: 0; }
+footer .icon { float: right; margin-right: 30px; background: url(images/footer_email_icon.png) no-repeat 0px 0px; width: 17px; height: 13px; background-size: 17px 26px; -webkit-background-size: 17px 26px; -moz-background-size: 17px 26px; -o-background-size: 17px 26px; margin-top: 2px; }
+footer .icon.notes { margin-right: 25px; background: url(images/footer_notes_icon.png) no-repeat 0px 0px; width: 17px; height: 13px; background-size: 18px 32px; -webkit-background-size: 18px 32px; -moz-background-size: 18px 32px; -o-background-size: 18px 32px; width: 18px; height: 16px; margin-top: 0px; }
+footer .icon:hover, footer .icon.notes.notesExist { background-position: bottom left; }
+
+#notesOverlay { position: fixed; top: 0; left: 0; width: 80%; height: 100%; background: rgba(255,255,255,0.9); z-index: 1000; padding: 8% 10% 0 10%; display: none; }
+#notesOverlay h3 { color: #90278C; font-size: 20px; margin: 20px 0 12px 0; }
+#notesOverlay textarea { width: 100%; padding: 0; margin: 0; border: 1px dashed #ccc; background: transparent; height: 250px; font-size: 13px; line-height: 20px; color: #3A4353; -webkit-appearance: none; }
+#notesOverlay #save { position: absolute; top: 15px; right: 20px; font-size: 15px; color: #90278C; text-decoration: none; background: url(images/content_tick_list.jpg) no-repeat left center; padding-left: 25px; }
+
+#emailOverlay { position: fixed; top: 0; left: 0; width: 80%; height: 100%; background: rgba(255,255,255,0.9); z-index: 1000; padding: 8% 10% 0 10%; display: none; }
+#emailOverlay h3 { color: #3a4353; font-size: 21px; margin: 15px 0; margin-left: 5px; }
+#emailOverlay .holder { position: absolute; bottom: 65px; left: 0; width: 90%; padding: 0 6%; }
+#emailOverlay .formBox { background: #90278c; padding: 5% 0; width: 100%; float: left; }
+#emailOverlay .formBox form { padding: 0 8%; width: 84%; }
+#emailOverlay .success { padding: 0 8%; width: 84%; font-size: 13px; color: #fff; display: none; margin: 0; }
+#emailOverlay .success strong { font-weight: normal; font-family: 'OpenBold'; }
+#emailOverlay .error { background: #541953; padding: 5% 8%; width: 84%; font-size: 13px; color: #fff; margin: 0 0 10px 0; display: none; }
+#emailOverlay .error strong { font-weight: normal; font-family: 'OpenBold'; }
+#emailOverlay label { color: #fff; font-size: 15px; margin: 0 0 10px 0; float: left;  width: 100%;}
+#emailOverlay input[type=text] { font-size: 12px; color: #90278c; background: #fff; border: 0; float: left; width: 80%; padding: 6px 5%; outline: 0; margin-bottom: 5px; border-radius: 0; -webkit-appearance: none; }
+#emailOverlay input[type=submit] { background: #fff url(images/email_overlay_submit_arrow.png) no-repeat center center; background-size: 6px 9px; -webkit-background-size: 6px 9px; -moz-background-size: 6px 9px; -o-background-size: 6px 9px; height: 28px; width: 10%; border: 0; text-indent: -9999px; padding: 0; border-radius: 0; }
+#emailOverlay input[type=submit]:hover { background-color: #eee; }
+#emailOverlay #cancel { position: absolute; bottom: 35px; left: 15px; font-size: 15px; color: #90278C; text-decoration: none; background: url(images/content_cross.png) no-repeat left center; background-size: 18px 18px; -webkit-background-size: 18px 18px; -moz-background-size: 18px 18px; -o-background-size: 18px 18px; padding-left: 25px; }
+#emailOverlay .arrow { background: url(images/email_overlay_arrow.png) no-repeat center center; width: 19px; height: 12px; position: absolute; bottom: -12px; right: 71px; }
+#emailOverlay.callback-error .error { display: block; }
+#emailOverlay.callback-success .formBox { background: #b1c804; }
+#emailOverlay.callback-success .success { display: block; }
+#emailOverlay.callback-success .formBox form { display: none; }

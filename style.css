@@ -29,7 +29,7 @@ background: -moz-linear-gradient(top,  #e3e3e3 0%, #ffffff 14%); background: -we
 .dashboard footer .blueBar img.rightLogo { float: right; margin-top: 15px; }
 
 .explore .mainContent { float: left; width: 100%; }
-.explore .wheel { position: relative; margin-top: 60px; width: 329px; float: left; height: 250px; margin-left: -9px; }
+.explore .wheel { position: relative; margin: 0 auto; margin-top: 60px; width: 329px; height: 250px; padding-right: 9px;}
 .explore .wheel .bottomShadow { float: left; width: 100%; position: absolute; height: 6px; background: url(images/wheel_bottom_shadow.png) no-repeat center center; bottom: 0; left: 0; }
 .explore .wheel a { position: absolute; color: #fff; text-decoration: none; font-size: 9px; z-index: 100; width: 110px; overflow: hidden; outline: 0; -webkit-tap-highlight-color: transparent; }
 .explore .wheel .selected a { font-family: 'OpenBold'; }
@@ -70,7 +70,7 @@ left: 167px; }
 left: 167px; }
 .explore .wheel .grey a { top: 26px; left: 44px; -webkit-transform: rotate(18deg); -moz-transform: rotate(18deg); -o-transform: rotate(18deg); writing-mode: lr-tb; }
 .explore .wheel .grey.selected a { top: 25px; left: 38px; }
-.explore .controls { position: absolute; bottom: 30px; left: 0; width: 100%; text-align: center; }
+.explore .controls { position: absolute; bottom: 30px; left: 0; width: 97%; text-align: center; }
 .explore .controls p { margin: 0; margin-left: 14px; font-size: 14px; line-height: 21px; color: #3A4353; }
 .explore .controls a { background: url(images/wheel_controls_arrows.png) no-repeat; background-position: top left; background-size: 24px 20px; -webkit-background-size: 24px 20px; -moz-background-size: 24px 20px; -o-background-size: 24px 20px; text-indent: -9999px; width: 12px; height: 20px; top: 15px; left: 91px; }
 .explore .controls a#next { background-position: top right; left: 241px; }

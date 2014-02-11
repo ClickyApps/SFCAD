@@ -16,5 +16,8 @@
     <author href="https://build.phonegap.com" email="josh@clicky.co.uk">
         Clicky Media
     </author>
+    
+    <preference name="orientation" value="portrait"/>
+    <preference name="fullscreen" value="true" />
 
 </widget>

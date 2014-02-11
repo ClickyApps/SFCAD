@@ -102,7 +102,7 @@ footer .icon:hover, footer .icon.notes.notesExist { background-position: bottom 
 
 #notesOverlay { position: fixed; top: 0; left: 0; width: 80%; height: 100%; background: rgba(255,255,255,0.9); z-index: 1000; padding: 8% 10% 0 10%; display: none; }
 #notesOverlay h3 { color: #90278C; font-size: 20px; margin: 20px 0 12px 0; }
-#notesOverlay textarea { width: 100%; padding: 0; margin: 0; border: 1px dashed #ccc; background: transparent; height: 250px; font-size: 13px; line-height: 20px; color: #3A4353; -webkit-appearance: none; }
+#notesOverlay textarea { width: 92%; padding: 2% 4%; margin: 0; border: 1px dashed #ccc; background: transparent; height: 250px; font-size: 13px; line-height: 20px; color: #3A4353; -webkit-appearance: none; }
 #notesOverlay #save { position: absolute; top: 15px; right: 20px; font-size: 15px; color: #90278C; text-decoration: none; background: url(images/content_tick_list.jpg) no-repeat left center; padding-left: 25px; }
 
 #emailOverlay { position: fixed; top: 0; left: 0; width: 80%; height: 100%; background: rgba(255,255,255,0.9); z-index: 1000; padding: 8% 10% 0 10%; display: none; }

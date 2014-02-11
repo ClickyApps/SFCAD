@@ -1,44 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets"
-  xmlns:gap   = "http://phonegap.com/ns/1.0"
-  id          = "com.carecouncilwales.app"
-  version     = "1.1.0">
-
-  <name>SfCaD</name>
-
-  <description>
-  	description
-  </description>
-
-  <author href="http://www.clicky.co.uk" email="josh@clicky.co.uk">
+<widget 
+	xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "com.carecouncilwales.app"
+	version     = "1.1.0">
+	
+	<name>SfCaD</name>
+	
+	<description>
+		description
+	</description>
+	
+	<author href="http://www.clicky.co.uk" email="josh@clicky.co.uk">
 	  Clicky Media
-  </author>
+	</author>
+	
+	<preference name="orientation"              value="portrait" />
+	<preference name="target-device"            value="universal" />
+	<preference name="fullscreen"               value="true" />
+	<preference name="disable-cursor"           value="true" />
+	<preference name="android-installLocation"  value="auto" />
+	
+	<gap:config-file platform="ios" parent="UISupportedInterfaceOrientations" overwrite="true">
+	<array>
+	    <string>UIInterfaceOrientationLandscapeOmg</string>
+	</array>
+	</gap:config-file>
+	
+	<access origin="*" />
+	
+	<preference name="permissions" value="none"/>
+	
+	<gap:splash src="splash.png" />
+	
+	<icon src="icon.png" />
+	<icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+	
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<icon src="icons/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+	<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="splash.png" />
+	<gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="748" />
+	<gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1004" />
+	
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+	<gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+	<gap:splash src="splash/ios/Default-568h@2x~iphone.png" gap:platform="ios" width="320" height="480" />
+	
+	<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 
-  <preference name="orientation"              value="portrait" />
-  <preference name="target-device"            value="universal" />
-  <preference name="fullscreen"               value="true" />
-  <preference name="disable-cursor"           value="true" />
-  <preference name="android-installLocation"  value="auto" />
-  
-  <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations" overwrite="true">
-    <array>
-        <string>UIInterfaceOrientationLandscapeOmg</string>
-    </array>
-  </gap:config-file>
-  
-  <access origin="*" />
-  
-  <preference name="permissions" value="none"/>
-  
-  <gap:splash src="splash.png" />
-  
-  <icon src="pg/icon.png" gap:platform="ios" width="57" height="57" />
-  <icon src="pg/icon72.png" gap:platform="ios" width="72" height="72" />
-  <icon src="pg/icon114.png" gap:platform="ios" width="114" height="114" />
-  
-  <gap:splash src="splash/ios/Default.png" width="320" height="480" />
-  <gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" />
-  <gap:splash src="splash/ios/Default-568h@2x.png" width="642" height="962" />
-  <gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
-  
 </widget>

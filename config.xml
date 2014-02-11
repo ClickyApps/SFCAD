@@ -20,6 +20,7 @@
 	<preference name="fullscreen"               value="true" />
 	<preference name="disable-cursor"           value="true" />
 	<preference name="android-installLocation"  value="auto" />
+	<preference name="DisallowOverscroll" value="false" />
 	
 	<gap:config-file platform="ios" parent="UISupportedInterfaceOrientations" overwrite="true">
 	<array>

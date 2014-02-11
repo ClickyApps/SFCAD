@@ -31,7 +31,23 @@
 	    	<h3>Your current notes:</h3>
 	    	<textarea></textarea>
 	    </div><!-- #notesOverlay -->
-    
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- notesOverlay -->
+
     	<header>
     		<img src="images/dashboard_logo.jpg" width="208"/>
     		<span class="bottomShadow"></span>

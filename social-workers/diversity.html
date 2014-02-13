@@ -28,7 +28,7 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+				var drawContent = window.localStorage.getItem( 'social-workers-diversity' );
 				if ( drawContent == '' ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +36,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+					var drawContent = window.localStorage.getItem( 'social-workers-diversity' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,7 +49,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-professionalism-example', saveContent);
+					window.localStorage.setItem( 'social-workers-diversity', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -79,7 +79,7 @@
 			</div><!-- holder -->
 		    <a href="" id="cancel">Cancel</a>
 	    </div><!-- #emailOverlay -->
-    
+
     	<header>
     		<h3>Social workers</h3>
     		<span class="bottomShadow"></span>
@@ -87,12 +87,22 @@
     	
     	<div class="mainContent">
     		<div class="headerImage">
-	    		<img src="../images/header_social-workers-professionalism-example.jpg"/>
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
 	    		<span class="bottomShadow"></span>
     		</div><!-- headerImage -->
     		<div class="contentArea">
-    			<h1>Types of evidence</h1>
-    			<p>Since this domain is mostly about how you behave you are encouraged to explore experiences which describe what you do with services users and with colleagues and other professionals. Where you have evidence in the form of feedback from others this would be useful to refer to. In addition, evidence about how you keep up to date with understanding social work in your particular area would be helpful.</p>
+    			<h1>Diversity</h1>
+    			<h6>Recognise diversity and apply anti-discriminatory and anti-oppressive principles in practice.</h6>
+    			<p>Social workers understand that diversity characterises and shapes human experience and is critical to the formation of identity. Diversity is multi- dimensional and includes race, disability, class, economic status, age, sexuality, gender and transgender, faith and belief. Social workers appreciate that, as a consequence of difference, a person’s life experience may include oppression, marginalisation and alienation as well as privilege, power and acclaim, and are able to challenge appropriately.</p>
+    			<ul>
+    				<li>Recognise the complexity of identity and diversity of experience, and apply this to practice</li>
+    				<li>Recognise discriminatory practices and develop a range of approaches to appropriately challenge service users, colleagues & senior staff</li>
+    				<li>Critically reflect on and manage the power of your role in your relationship with others</li>
+    			</ul>
+    			<p>With this capability it is important that you recognise diversity in human life and that some people are significantly oppressed as a consequence of who they are. You are advised to think carefully about the service users with whom you work and to examine their different identities. How has their identity been shaped by their experience and by their characteristics? In what ways might service users be discriminated against by others in society and by institutions? And how do they experience the use of power? You will need to think about how you appropriately use the power invested in you as a social worker, too, and think about when you have had to challenge other people who may have used their power inappropriately.</p>
+    			<h3>The following illustration may help:</h3>
+    			<p>Mental health social work brings me into contact with people from different walks of life. My case load consists mostly of men with about 1/3rd women. There are a disproportionate number of black service users given the general population in this area and I recognise that racism must play a part in the greater prevalence of black people in the system. Mr Y is in his early 20s and he developed a psychosis during the latter part of his teens. His early life experience was problematic with several episodes spent in care. He struggles to come to terms with his past and he experiences delusions about supposed family members that don’t exist. He can be quite challenging at times and I have to reflect on my own reactions to him being careful not to stereotype his as aggressive. I have had to challenge colleagues who in the past were seemingly quick to label him as dangerous, when actually he was trying to express himself from within his own cultural experience. This case contrasts significantly with another involving a 30 year old mother of twin daughters who were born 18 months ago. The mother, Ms F, has experienced severe post natal depression. She had a relatively ordinary childhood but reports that her parent’s high expectations of her meant that she was always going to fail in life. Her self-esteem is rarely high and she struggles with her twin daughters. She is often very compliant when I am with her and I have to be very careful not use my power excessively. Although she has some support, I recognise that her care of her daughters was not always adequate and I am currently recommending that a referral to children’s services is made.</p>
+	    		<a href="diversity-example.html" class="more">Read example</a>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->
     	

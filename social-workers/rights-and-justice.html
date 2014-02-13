@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'social-workers-rights-and-justice' );
+				if ( drawContent == '' ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'social-workers-rights-and-justice' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'social-workers-rights-and-justice', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+
+    	<header>
+    		<h3>Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<h1>Rights, Justice and Economic Wellbeing</h1>
+    			<h6>Advance human rights and promote social justice and economic well-being.</h6>
+    			<p>Social workers recognise the fundamental principles of human rights and equality, and that these are protected in national and international law, conventions and policies. They ensure these principles underpin their practice. Social workers understand the importance of using and contributing to case law and applying these rights in their own practice. They understand the effects of oppression, discrimination and poverty.</p>
+    			<ul>
+    				<li>Routinely integrate the principles of and entitlements to social justice, social inclusion and equality, and with support, consider how and when challenge may be needed</li>
+    				<li>Routinely apply the law to protect and advance people’s rights and entitlements, identifying and highlighting situations where interpretations of the law are neither proportionate nor fair to promote autonomy and self-determination</li>
+    				<li>Apply the principles and entitlements of human and civil rights to analyse, evaluate and challenge interventions that are unlawful and / or disproportionate</li>
+    				<li>Analyse differing needs, perspectives and competing rights and apply to practice</li>
+    				<li>Enable and support people to consider and pursue a range of options that may enhance economic status (through access to education, work, housing, health services and welfare benefits)</li>
+    				<li>Where appropriate, set up and/ or enable access to effective independent advocacy</li>
+    			</ul>
+    			<p>An understanding of human rights and equality law is critical to demonstrate this capability and you will need to show how you apply your understanding in practice through the use of a case example or two. It could be argued that this capability is broader in that it includes social justice as well as rights and entitlements. What is socially justice is a moral question and it maybe that current rights and entitlements are insufficient to meet broader requirements for justice. The other element in this capability is economic wellbeing and you may want to consider cases where you have help service users to improve their economic wellbeing or perhaps where you have provided users with independent advocacy.</p>
+    			<h3>The following example is provided as an illustration:</h3>
+    			<p>In my work with adults with learning disabilities I sometimes have to undertake Best Interests Assessments and in doing so I have to exercise real care to ensure that I do not infringe a person’s human rights. In assessing Tom, a 36 year man with several autism, who had become physically unwell, I was being asked to determine whether he should be taken to hospital for treatment. He was showing signs of reluctance to go but his health was deteriorating and I recognised that he needed medical help. I explored first how much medical assistance could be given at his residential home and I put some pressure on his GP to do just that. I knew from previous work with Tom that he would become very distressed if his usual routine was disrupted. I considered all of the criteria mentioned in s4 of the Mental Capacity Act 2005. In addition, I specifically consulted Tom’s Independent Mental Capacity Advocate to ensure that Tom was able to fully participate in the decision so far as he was practically able to do and so that I considered Tom’s wishes and feelings. I knew that he would be reluctant to have his routine disrupted but I also could see that he was suffering with poor health. Eventually, I did decide that it was in his Best Interests to be taken to hospital for a short time so that medical treatment could be given. I recorded this as accurately as I could. I then prepared the hospital for Tom’s admission so that they knew how to cope with his needs and so that he could be discharged as quickly as possible.</p>
+	    		<a href="rights-and-justice-example.html" class="more">Read example</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

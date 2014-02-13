@@ -28,7 +28,7 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+				var drawContent = window.localStorage.getItem( 'social-workers-diversity-example' );
 				if ( drawContent == '' ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +36,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+					var drawContent = window.localStorage.getItem( 'social-workers-diversity-example' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,7 +49,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-professionalism-example', saveContent);
+					window.localStorage.setItem( 'social-workers-diversity-example', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -92,7 +92,7 @@
     		</div><!-- headerImage -->
     		<div class="contentArea">
     			<h1>Types of evidence</h1>
-    			<p>Since this domain is mostly about how you behave you are encouraged to explore experiences which describe what you do with services users and with colleagues and other professionals. Where you have evidence in the form of feedback from others this would be useful to refer to. In addition, evidence about how you keep up to date with understanding social work in your particular area would be helpful.</p>
+    			<p>Case work examples which draw on difference and diversity are good sources of evidence in this domain. You are referred to those examples where there is evidence of discrimination and/or oppression. You should be able to show what you have done to challenge the discrimination. In addition, it is important that you are able to analyse who has power and how that power is used, including your own power.</p>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->
     	

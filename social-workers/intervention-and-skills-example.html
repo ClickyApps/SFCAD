@@ -28,7 +28,7 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+				var drawContent = window.localStorage.getItem( 'social-workers-intervention-and-skills-example' );
 				if ( drawContent == '' ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +36,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+					var drawContent = window.localStorage.getItem( 'social-workers-intervention-and-skills-example' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,7 +49,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-professionalism-example', saveContent);
+					window.localStorage.setItem( 'social-workers-intervention-and-skills-example', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -92,7 +92,8 @@
     		</div><!-- headerImage -->
     		<div class="contentArea">
     			<h1>Types of evidence</h1>
-    			<p>Since this domain is mostly about how you behave you are encouraged to explore experiences which describe what you do with services users and with colleagues and other professionals. Where you have evidence in the form of feedback from others this would be useful to refer to. In addition, evidence about how you keep up to date with understanding social work in your particular area would be helpful.</p>
+    			<p>You will need to draw on evidence which describes your communication and assessment skills. Case examples would help you to do this. In addition this domain requires some evidence of what you do to help service users. You should try to consider those examples from practice which you think shows how you have made things better for service users. Recording systems and processes might also provide some useful material on which to draw.   
+Intervention and Skills: Use judgement and authority to intervene with individuals, families and communities to promote independence, provide support and prevent harm, neglect and abuse.</p>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->
     	

@@ -28,7 +28,7 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+				var drawContent = window.localStorage.getItem( 'social-workers-rights-and-justice-example' );
 				if ( drawContent == '' ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +36,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-professionalism-example' );
+					var drawContent = window.localStorage.getItem( 'social-workers-rights-and-justice-example' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,7 +49,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-professionalism-example', saveContent);
+					window.localStorage.setItem( 'social-workers-rights-and-justice-example', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -92,7 +92,7 @@
     		</div><!-- headerImage -->
     		<div class="contentArea">
     			<h1>Types of evidence</h1>
-    			<p>Since this domain is mostly about how you behave you are encouraged to explore experiences which describe what you do with services users and with colleagues and other professionals. Where you have evidence in the form of feedback from others this would be useful to refer to. In addition, evidence about how you keep up to date with understanding social work in your particular area would be helpful.</p>
+    			<p>You should draw on sources of evidence which concern the law or human rights. Case examples which require you to apply the law would be useful as would examples where you have to exercise some judgement about rights or entitlement. The other feature in this domain has to do with social justice and so examples which involve social  rights rather than legal entitlements would also be helpful.</p>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->
     	

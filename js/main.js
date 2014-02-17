@@ -1,5 +1,5 @@
 $(function(){
-	
+
 	/* Explore: Wheel */
 	
 	// Clicking On Triangles

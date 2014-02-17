@@ -29,6 +29,9 @@
 	</array>
 	</gap:config-file>
 	
+	<access origin="*" />
+	
+	<preference name="permissions" value="none"/>
 	
 	<gap:splash src="splash.png" />
 	

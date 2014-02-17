@@ -28,7 +28,8 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-professional-leadership-example' );
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-professional-leadership-example' );
+				alert(drawContent);
 				if ( drawContent == null ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +37,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-professional-leadership-example' );
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-professional-leadership-example' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,7 +50,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-professional-leadership-example', saveContent);
+					window.localStorage.setItem( 'experienced-social-workers-professional-leadership-example', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -81,7 +82,7 @@
 	    </div><!-- #emailOverlay -->
     
     	<header>
-    		<h3>Social workers</h3>
+    		<h3>Experienced Social workers</h3>
     		<span class="bottomShadow"></span>
     	</header>
     	
@@ -92,7 +93,7 @@
     		</div><!-- headerImage -->
     		<div class="contentArea">
     			<h1>Types of evidence</h1>
-    			<p>The sources of evidence for this domain are likely to centre on the projects with which you are currently engaged. Your own supervision records might provide a useful source of material.</p>
+    			<p>The sources of evidence for this domain are likely to centre on the projects with which you are currently engaged. The supervision records which you keep on supervisees might provide a useful source of material as would records of meetings you attend.</p>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->
     	

@@ -29,7 +29,7 @@
         <script type="text/javascript">
         	$(function(){
 				var drawContent = window.localStorage.getItem( 'social-workers-rights-and-justice-example' );
-				if ( drawContent == '' ) {
+				if ( drawContent == null ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
 					$('#showNotes').addClass('notesExist');

@@ -28,7 +28,7 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-professional-leadership-example' );
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-professional-leadership' );
 				if ( drawContent == null ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +36,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-professional-leadership-example' );
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-professional-leadership' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,7 +49,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-professional-leadership-example', saveContent);
+					window.localStorage.setItem( 'experienced-social-workers-professional-leadership', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -79,20 +79,31 @@
 			</div><!-- holder -->
 		    <a href="" id="cancel">Cancel</a>
 	    </div><!-- #emailOverlay -->
-    
+
     	<header>
-    		<h3>Social workers</h3>
+    		<h3>Experienced Social workers</h3>
     		<span class="bottomShadow"></span>
     	</header>
     	
     	<div class="mainContent">
     		<div class="headerImage">
-	    		<img src="../images/header_social-workers-professionalism-example.jpg"/>
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
 	    		<span class="bottomShadow"></span>
     		</div><!-- headerImage -->
     		<div class="contentArea">
-    			<h1>Types of evidence</h1>
-    			<p>The sources of evidence for this domain are likely to centre on the projects with which you are currently engaged. Your own supervision records might provide a useful source of material.</p>
+    			<h1>Professional Leadership</h1>
+    			<h6>Take responsibility for the professional learning and development of others through supervision, mentoring, assessing, research, teaching, leadership and management.</h6>
+    			<p>The social work profession evolves through the contribution of its members in activities such as practice research, supervision, assessment of practice, teaching and management. An individual’s contribution will gain influence when undertaken as part of a learning, practice-focused organisation. Learning may be facilitated with a wide range of people including social work colleagues, service users and carers, volunteers, foster carers and other professionals.</p>
+    			<ul>
+    				<li>Contribute to organisational developments</li>
+    				<li>Play leading role in practice development in the team and help sustain a learning culture</li>
+    				<li>Provide supervision to colleagues as organisation determines. Support others to manage and prioritise work</li>
+    				<li>Assess and manage the work of social work students and ASYE</li>
+    			</ul>
+    			<p>At Experienced Social Worker level you will be contributing more particularly to developments in the organisation which support social work practice. You will also be taking more responsibility for the supervision of others.</p>
+    			<h3>The following illustrates how you might do this:</h3>
+    			<p>I supervise three members of the team on a regular basis and I have been the practice educator for two students during the last two years. In my supervision I always allocate time to ensure that my supervisees are learning and developing their practice. I require them to read theories and research and I always insist on reports back when they have been on training course and I encourage them to share this learning in the team. My particular area of specialism in the team at Cafcass is dispute resolution. I was part of the development group helping to set up a dispute resolution service for separated parents which went live recently. I am helping with evidence collection so that the service can be properly evaluated. I also provide a consultation service for colleague in the region on dispute resolution activities. I set up a local dispute resolution information exchange so that colleagues can access information quickly and efficiently. I was recently invited by the senior leaders in the service to report on alternative dispute resolution services in other parts of the world. This followed a short article I had written for Cafcass news about what I had read about these services.</p>
+	    		<a href="professional-leadership-example.html" class="more">Read example</a>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->
     	

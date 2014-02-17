@@ -28,7 +28,7 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-explore' );
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-explore' );
 				if ( drawContent == null ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +36,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-explore' );
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-explore' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,7 +49,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-explore', saveContent);
+					window.localStorage.setItem( 'experienced-social-workers-explore', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -81,7 +81,7 @@
 	    </div><!-- #emailOverlay -->
     
     	<header>
-    		<h3>Social workers</h3>
+    		<h3>Experienced Social workers</h3>
     		<span class="bottomShadow"></span>
     	</header>
     	

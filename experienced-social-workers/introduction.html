@@ -28,7 +28,7 @@
         <script src="../js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'social-workers-professional-leadership-example' );
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-introduction' );
 				if ( drawContent == null ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,7 +36,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'social-workers-professional-leadership-example' );
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-introduction' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -49,14 +49,14 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'social-workers-professional-leadership-example', saveContent);
+					window.localStorage.setItem( 'experienced-social-workers-introduction', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
         	});
         </script>        
     </head>
-    <body class="standard details">
+    <body class="standard introduction">
     
     	<div id="notesOverlay">
     		<a href="" id="save">Save</a>
@@ -81,26 +81,25 @@
 	    </div><!-- #emailOverlay -->
     
     	<header>
-    		<h3>Social workers</h3>
+    		<h3>Experienced Social workers</h3>
     		<span class="bottomShadow"></span>
     	</header>
     	
     	<div class="mainContent">
     		<div class="headerImage">
-	    		<img src="../images/header_social-workers-professionalism-example.jpg"/>
+	    		<img src="../images/header_social-workers-introduction.jpg"/>
 	    		<span class="bottomShadow"></span>
     		</div><!-- headerImage -->
     		<div class="contentArea">
-    			<h1>Types of evidence</h1>
-    			<p>The sources of evidence for this domain are likely to centre on the projects with which you are currently engaged. Your own supervision records might provide a useful source of material.</p>
+    			<h1>About Experienced Social Workers Level</h1>
+    			<h6>Experienced social workers are more autonomous in their role. They demonstrate expert and effective practice in complex situations, assessing and manageing higher levels of risk,  striking a balance between support and control, liaising with a wide range of professionals, including more senior levels. They manage complex caseloads, and offer expert opinion within the organisation and to others. They chair a range of meetings, offer expert support to case conferences, and produce high quality assessments and reports for a range of functions. They model good practice, setting expectations for others. They start to take responsibility and be accountable for the practice of others, mentoring newly qualified  social workers, and supervising the work of junior staff. They undertake capacity-building with individuals, families, communities, user groups and voluntary organisations, and contribute their views on service provision to commissioners.</h6>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->
     	
     	<footer>
     		<span class="topShadow"></span>
-    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
-    		<a href="" id="showNotes" class="icon notes"></a>
-    		<a href="" id="showEmail" class="icon email"></a>
+    		<a href="../index.html" class="homeIcon"><img src="../images/footer_home_icon.png" width="56"/></a>
+    		<a href="explore.html" class="exploreIcon"><img src="../images/footer_explore_main_icon.png" width="165"/></a>
     	</footer>
     	
         <script src="../js/vendor/zepto.min.js"></script>

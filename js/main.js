@@ -3,7 +3,7 @@ $(function(){
 	/* Explore: Wheel */
 	
 	// Clicking On Triangles
-	$('.explore .wheel .triangles a').click(function(){
+	$('.explore .wheel .triangles a').click(function(e){
 		// Deal with wheel
 		$('.explore .wheel div').removeClass('selected');
 		$(this).parent().addClass('selected');
@@ -12,11 +12,11 @@ $(function(){
 		var contentID = '#content-' + colorSelected;
 		$('.explore .contentArea > div').removeClass('show');
 		$(contentID).addClass('show');
-		return false;
+		e.preventDefault;
 	});
 	
 	// Next Button
-	$('.explore .wheel .controls #next').click(function(){
+	$('.explore .wheel .controls #next').click(function(e){
 		// Deal with wheel
 		if ( $('.explore .wheel .triangles .selected').hasClass('grey') )
 		{
@@ -35,11 +35,11 @@ $(function(){
 		}
 		$('.explore .contentArea > div').removeClass('show');
 		$(nextContent).addClass('show');
-		return false;
+		e.preventDefault;
 	});
 	
 	// Previous Button
-	$('.explore .wheel .controls #prev').click(function(){
+	$('.explore .wheel .controls #prev').click(function(e){
 		// Deal with wheel
 		if ( $('.explore .wheel .triangles .selected').hasClass('red') )
 		{
@@ -58,23 +58,23 @@ $(function(){
 		}
 		$('.explore .contentArea > div').removeClass('show');
 		$(nextContent).addClass('show');
-		return false;
+		e.preventDefault;
 	});
 	
 	// Email Functionality
 	
         // Show Email
-		$('#showEmail').click(function(){
+		$('#showEmail').click(function(e){
 			$('#emailOverlay').fadeIn('fast');
-			return false;
+			e.preventDefault;
 		});
 		// Save Notes
-		$('#cancel').click(function(){
+		$('#cancel').click(function(e){
 			$('#emailOverlay').fadeOut('fast');
-			return false;
+			e.preventDefault;
 		});
 		// AJAX Processing
-		$('#emailPDF').submit(function(){
+		$('#emailPDF').submit(function(e){
 			var email = $('#emailAddress').val();
 			$.ajax({
 			  type: "POST",
@@ -94,7 +94,7 @@ $(function(){
 			  	$('#emailOverlay').addClass('callback-error');
 		      }
 			});
-			return false;
+			e.preventDefault;
 		});
 			
 });

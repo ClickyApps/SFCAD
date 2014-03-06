@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="cleartype" content="on">
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
@@ -27,6 +27,7 @@
         <script type="text/javascript">
         	$(function(){
 				var drawContent = window.localStorage.getItem( 'social-workers-professionalism' );
+				$('#savedNotes').val(drawContent);
 				if ( drawContent == null ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -36,6 +37,7 @@
 				$('#showNotes').click(function(){
 					var drawContent = window.localStorage.getItem( 'social-workers-professionalism' );
 					$('#notesOverlay textarea').val(drawContent);
+					$('#savedNotes').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
 				});
@@ -48,6 +50,7 @@
 						$('#showNotes').addClass('notesExist');
 					}
 					window.localStorage.setItem( 'social-workers-professionalism', saveContent);
+					$('#savedNotes').val(saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -55,6 +58,8 @@
         </script>        
     </head>
     <body class="standard details">
+    
+    	<input type="hidden" id="savedNotes"/>
     
     	<div id="notesOverlay">
     		<a href="" id="save">Save</a>
@@ -89,25 +94,28 @@
 	    		<span class="bottomShadow"></span>
     		</div><!-- headerImage -->
     		<div class="contentArea">
-    			<h1>Professionalism</h1>
-    			<h6>Identify and behave as a professional social worker, committed to professional development.</h6>
-    			<p>Social workers are members of an internationally recognised profession, a title protected in UK law. Social workers demonstrate professional commitment by taking responsibility for their conduct, practice and learning, with support through supervision. As representatives of the social work profession they safeguard its reputation and are accountable to the professional regulator.</p>
-    			<ul>
-    				<li>Be able to meet the requirements of the professional regulator</li>
-    				<li>Promote the profession in a growing range of contexts</li>
-    				<li>Take responsibility for obtaining regular, effective supervision from a SW for effective practice, reflection and career development</li>
-    				<li>Maintain professionalism in the face of more challenging circumstances</li>
-    				<li>Manage workload independently, seeking support and suggesting solutions for workload difficulties</li>
-    				<li>Maintain appropriate personal/professional boundaries in more challenging circumstances</li>
-    				<li>Make skilled use of self as part of your interventions</li>
-    				<li>Maintain awareness of own professional limitations and knowledge gaps. Establish a network of internal and external colleagues from whom to seek advice and expertise</li>
-    				<li>Identify and act on learning needs for CPD, including through supervision</li>
-    				<li>Routinely promote well-being at work</li>
-    				<li>Raise and address issues of poor practice, internally through the organisation, and then independently if required</li>
-    			</ul>
-    			<p>This capability requires you to demonstrate that you are a responsible professional which means amongst other things that you behave with integrity, you take responsibility for your own learning and development, you do not practice beyond your competence, you are proactive with your case work and you promote the social work profession whenever you can.</p>
-    			<h3>The following is an illustration of how to demonstrate this:</h3>
-    			<p>In my work at the child development centre I provide a social work perspective within the wider multi-disciplinary team which includes paediatricians, occupational therapists, psychologists and others. I try to concentrate on understanding the social relationships within the family and between the family and others and this helps the team to understand the family’s context. In order to provide this service I know that I have to keep up to date with developments in my profession and I do this through supervision, training and reading the professional press. For example, I use the Athens Table of Contents service for the British Journal of Social Work so that I can access articles of interest. I always try to get on to training courses which are about understanding social relations and I have therefore done quite a bit of training about children’s attachments for example, Trauma and Attachment Outcomes in Oct 2013 and Assessments Using Attachment Theory in Jan 2013. Once a fortnight I attend a multi-disciplinary case discussion group where one person in the team presents a case for analysis and reflection by the group. I have presented a couple of times this year and have found the experience really helpful. My presentations have concentrated on attachments and I am working towards greater fluency in being able to identify attachment styles. I am not yet experienced enough to independently assess attachment styles but I work with my supervisor in these instances, deferring to her judgement when necessary. I use supervision to explore case work issues and other matters that arise in the course of my work. Recently I raised an issue about a colleague who had been very rude to a parent at the centre and my supervisor and I considered how to deal with this.</p>
+    			<section>
+	    			<h1>Professionalism</h1>
+	    			<h6>Identify and behave as a professional social worker, committed to professional development.</h6>
+	    			<p>Social workers are members of an internationally recognised profession, a title protected in UK law. Social workers demonstrate professional commitment by taking responsibility for their conduct, practice and learning, with support through supervision. As representatives of the social work profession they safeguard its reputation and are accountable to the professional regulator.</p>
+	    			<h3>Practitioners at this level should:</h3>
+	    			<ul>
+	    				<li>Be able to meet the requirements of the professional regulator.</li>
+	    				<li>Promote the profession in a growing range of contexts.</li>
+	    				<li>Take responsibility for obtaining regular, effective supervision from a social worker for effective practice, reflection and career development.</li>
+	    				<li>Maintain professionalism in the face of more challenging circumstances.</li>
+	    				<li>Manage workload independently, seeking support and suggesting solutions for workload difficulties.</li>
+	    				<li>Maintain appropriate personal/professional boundaries in more challenging circumstances.</li>
+	    				<li>Make skilled use of self as part of your interventions.</li>
+	    				<li>Maintain awareness of own professional limitations and knowledge gaps. Establish a network of internal and external colleagues from whom to seek advice and expertise.</li>
+	    				<li>Identify and act on learning needs for CPD, including through supervision.</li>
+	    				<li>Routinely promote well-being at work.</li>
+	    				<li>Raise and address issues of poor practice, internally through the organisation, and then independently if required.</li>
+	    			</ul>
+	    			<h3>Evidencing your capabilities:</h3>
+	    			<p>At this level, this domain requires you to demonstrate that you are a responsible professional. Amongst other things, this means that you behave with integrity, you take responsibility for your own learning and development, you do not practice beyond your competence, you are proactive with your case work, and you promote the social work profession whenever you can.</p>
+	    			<p>Since this domain is mostly about how you behave, you are encouraged to explore your experiences with services users, colleagues, and other professionals. Where you have evidence in the form of feedback from others, this would be useful to reference. In addition, evidence relating to how you keep up to date with understanding social work in your particular area would be helpful, alongside suitably anonymised case notes.</p>
+    			</section>
 	    		<a href="professionalism-example.html" class="more">Read example</a>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->

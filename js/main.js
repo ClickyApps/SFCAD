@@ -2,7 +2,6 @@ $(function(){
 
 	/* Explore: Wheel */
 	
-	
 	// Clicking On Triangles
 	$('.explore .wheel .triangles a').click(function(e){
 		e.preventDefault();
@@ -70,19 +69,26 @@ $(function(){
 			e.preventDefault();
 			$('#emailOverlay').fadeIn('fast');
 		});
-		// Save Notes
+		// Hide Email
 		$('#cancel').click(function(e){
 			e.preventDefault();
 			$('#emailOverlay').fadeOut('fast');
+			// Reset Email Function
+			setTimeout(function() {
+				$('#emailOverlay').removeClass('callback-success').removeClass('callback-error');
+			}, 1000);			
 		});
 		// AJAX Processing
 		$('#emailPDF').submit(function(e){
 			e.preventDefault();
 			var email = $('#emailAddress').val();
+			var emailContent = $('section').html();
+			var notes = $('#savedNotes').val();
+			notes = notes.replace(/\r?\n/g, '<br />');
 			$.ajax({
 			  type: "POST",
 			  url: 'http://dev.clickymedia.co.uk/sfcad/process-pdf.php',
-			  data: { email : email },
+			  data: { email : email, emailContent: emailContent, notes: notes },
 			  success: function(returnData){
 			  	if ( returnData == 'Error' ) {
 				  	$('#emailOverlay').removeClass('callback-success');

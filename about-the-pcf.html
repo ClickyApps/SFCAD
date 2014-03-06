@@ -26,7 +26,7 @@
         <script src="js/main.js"></script>
         <script type="text/javascript">
         	$(function(){
-				var drawContent = window.localStorage.getItem( 'how-to-use-this-app' );
+				var drawContent = window.localStorage.getItem( 'about-the-pcf' );
 				if ( drawContent == null ) {
 					$('#showNotes').removeClass('notesExist');
 				} else {
@@ -34,7 +34,7 @@
 				}
 	        	// Show Notes
 				$('#showNotes').click(function(){
-					var drawContent = window.localStorage.getItem( 'how-to-use-this-app' );
+					var drawContent = window.localStorage.getItem( 'about-the-pcf' );
 					$('#notesOverlay textarea').val(drawContent);
 					$('#notesOverlay').fadeIn('fast');
 					return false;
@@ -47,7 +47,7 @@
 					} else {
 						$('#showNotes').addClass('notesExist');
 					}
-					window.localStorage.setItem( 'how-to-use-this-app', saveContent);
+					window.localStorage.setItem( 'about-the-pcf', saveContent);
 					$('#notesOverlay').fadeOut('fast');
 					return false;
 				});
@@ -81,7 +81,7 @@
 	    </div><!-- #emailOverlay -->
     
     	<header>
-    		<h3>How to use this app</h3>
+    		<h3>About the PCF</h3>
     		<span class="bottomShadow"></span>
     	</header>
     	
@@ -92,19 +92,32 @@
     		</div><!-- headerImage -->
     		<div class="contentArea">
     			<section>
-	    			<h1>How to use this app:</h1>
-	    			<p>This app provides an easily accessible tool through which social workers can reflect on where they are and where they want to get to, both in their practice and their career. Social workers will practice at different levels of capability as their careers progress, and this app sets out the expectations of social workers who practice at two particular levels on the Professional Capabilities Framework (PCF): social worker and experienced social worker.</p>
-	    			<h3>To use the app, the following guidance will be helpful.</h3>
+	    			<h1>About the PCF:</h1>
+	    			<p>The Professional Capabilities Framework (PCF) is an overarching professional standards framework, developed by the Social Work Reform Board and now owned by The College of Social Work. The PCF:</p>
 	    			<ul>
-	    				<li>First, select a level (‘Social Worker’ or ‘Experienced Social Worker’). You will then read a level descriptor. This is a paragraph that describes the expected overall standard of capability of an individual practising at this level.</li>
-	    				<li>Once you have read the level descriptor, select ‘Explore’ to progress to the ‘domain’ area. You will see a coloured fan which lists each of the nine capability domains within the PCF, from Professionalism to Professional Leadership.</li>
-	    				<li>Select your domain area and tap ‘View Section’. You will then be able to view the expectations (or ‘capability statements’) of that particular practice area and the types of evidence which might be used to demonstrate that you meet these expectations.</li>
-	    				<li>Select ‘Evidence example’ to view a practical evidence illustration. Please note that this is only an example and should not be considered a model answer. It is for individual practitioners to demonstrate, using their own evidence, how they meet the standards set out in the PCF.</li>
-	    				<li>Should you wish to make notes on the capabilities and evidence examples, select the speech bubble at the bottom of the screen. Return to the same page and click the icon again to view and add to your notes.</li>
-	    				<li>Select the envelope to email a copy of the information on any page to yourself.</li>
+	    				<li>Sets out consistent expectations of social workers at every stage in their career.</li>
+	    				<li>Provides a backdrop to both initial social work education and continuing professional development after qualification.</li>
+	    				<li>Informs the design and implementation of the national career structure.</li>
+	    				<li>Gives social workers a framework around which to plan their careers and professional development.</li>
 	    			</ul>
-	    			<h3>More information:</h3>
-	    			<p>In the coming year, we hope to add the remaining PCF levels to this app. For more information related to the PCF in the meantime, please visit www.tcsw.org.uk.</p>
+	    			<p>The PCF applies to all social workers in England (including independent social workers), in all roles and settings. Social workers in Wales, Northern Ireland and Scotland have their own frameworks and standards.</p>
+	    			<p>The PCF sets out the expectations of a student or social worker practising at each of nine levels, from student entry level to the Strategic Social Worker Level. The levels relate to the complexity of work that someone with the identified capabilities would be able to manage.</p>
+	    			<p>The PCF is divided into nine ‘domains’, or capability areas. These are:</p>
+	    			<ul>
+	    				<li>Professionalism</li>
+	    				<li>Values & Ethics</li>
+	    				<li>Diversity</li>
+	    				<li>Rights, Justice & Economic Wellbeing</li>
+	    				<li>Knowledge</li>
+	    				<li>Critical Reflection & Analysis</li>
+	    				<li>Intervention & Skills</li>
+	    				<li>Contexts & Organisations</li>
+	    				<li>Professional Leadership</li>
+	    			</ul>
+	    			<p>These domains should be seen as interdependent, not separate: they interact in professional practice, so there are overlaps between the domains, and many issues will be relevant to more than one domain. Moreover, understanding what a social worker does can only be complete by taking into account all nine domains. Assessing learning, performance and progression in relation to the PCF therefore requires an approach congruent with this framework.</p>
+	    			<p>This app focuses on the expectations of qualified social workers at two levels on the PCF: social worker and experienced social worker. It provides the opportunity for individuals to learn about those expectations. For practitioners, the app also sets out examples of the kinds of evidence which might be used to demonstrate that they meet the expectations.</p>
+	    			<p>For more information related to the PCF, please visit www.tcsw.org.uk.</p>
+	    			<p>© 2012 The College of Social Work. Updated versions of the PCF will be posted from time to time on the College website. These documents or parts of them may be copied for personal, non-commercial use and training purposes, provided the original source is acknowledged and this copyright statement retained.</p>
     			</section>
     		</div><!-- contentArea -->
     	</div><!-- mainContent -->

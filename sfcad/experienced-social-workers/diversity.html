@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-diversity' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-diversity' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'experienced-social-workers-diversity', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<input type="hidden" id="savedNotes"/>
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+
+    	<header>
+    		<h3>Experienced Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<section>
+	    			<h1>Diversity</h1>
+	    			<h6>Recognise diversity and apply anti-discriminatory and anti-oppressive principles in practice.</h6>
+	    			<p>Social workers understand that diversity characterises and shapes human experience and is critical to the formation of identity. Diversity is multi-dimensional and includes race, disability, class, economic status, age, sexuality, gender and transgender, faith and belief. Social workers appreciate that, as a consequence of difference, a person’s life experience may include oppression, marginalisation and alienation as well as privilege, power and acclaim, and are able to challenge appropriately.</p>
+	    			<h3>Practitioners at this level should:</h3>
+	    			<ul>
+	    				<li>Inform, guide and model good practice in the application of understanding of identity and diversity to practice; identifying and taking up issues when principles of diversity are contravened in the organisation.</li>
+	    				<li>Model critically reflective practice and support others to recognise and challenge discrimination, identifying and referring breaches and limitations in the ability of your own or other organisations’ ability to advance equality and diversity and comply with the law.</li>
+	    				<li>Demonstrate and model the effective and positive use of power and authority, whilst recognising and providing guidance to others as to how it may be used oppressively.</li>
+	    			</ul>
+	    			<h3>Evidencing your capabilities:</h3>
+	    			<p>At the Experienced Social Worker level, you will need to show that you are a role model in your practice, especially challenging institutional discrimination when this arises in your own organisation or in others. You should be able to apply the law in respect to discrimination and equality and show others how to reflect on their practice and challenge oppression whenever it arises. You should be adept at using your authority appropriately.</p>
+	    			<p>Case work examples which draw on difference and diversity are good sources of evidence in this domain, particularly those where you have helped other people to challenge discrimination and/or oppression. You should also use those sources of evidence which show a skilled and appropriate use of power and authority.</p>
+	    		</section>
+	    		<a href="diversity-example.html" class="more">Read example</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

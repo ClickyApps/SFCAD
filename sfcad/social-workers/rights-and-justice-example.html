@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'social-workers-rights-and-justice-example' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'social-workers-rights-and-justice-example' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'social-workers-rights-and-justice-example', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<input type="hidden" id="savedNotes"/>
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+    
+    	<header>
+    		<h3>Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism-example.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<section>
+    				<h1>The following illustration may help:</h1>
+    				<p>In my work with adults with learning disabilities I have sometimes had to undertake assessments to determine whether individuals have the capacity to make certain decisions. Where they are assessed as not having the capacity, I am required to determine what is in their best interests. In doing so, I have to exercise care to ensure that I do not infringe a person’s human rights and that I apply the Mental Capacity Act (MCA) criteria of decision-specific and time-specific considerations of capacity. In assessing T, a 36 year man with severe autism who had become physically unwell, I was asked to determine whether he should be taken to hospital for treatment. He was showing signs of reluctance to go, but his health was deteriorating and I recognised that he needed medical help. I explored first how much medical assistance could be given at his residential home and I liaised with his GP to do just that. I knew from previous work with T that he would become very distressed if his usual routine was disrupted. I considered all of the criteria mentioned in s4 of the Mental Capacity Act 2005 and I undertook a capacity assessment to determine whether T had the capacity to make a decision about his immediate health care and treatment at that moment. In addition, as T had no other family or friends to support him, I specifically consulted T’s Independent Mental Capacity Advocate. This ensured that I supported T to participate in the decision as much as he was able and ensure that I fully considered T’s wishes and feelings. I knew that he would be reluctant to have his routine disrupted but I also could see that he was suffering with poor health. Eventually, I did decide that it was in his best interests to be taken to hospital so that medical treatment could be given as per section 5 of the MCA. I recorded this as accurately as I could. I then prepared the hospital for T’s admission so that they knew how to cope with his needs and so that he could be discharged as quickly as possible.</p>
+    			</section>
+	    		<a href="rights-and-justice.html" class="more back">Back</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

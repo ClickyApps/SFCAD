@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'about-the-pcf' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'about-the-pcf' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'about-the-pcf', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard how">
+    
+    	<input type="hidden" id="savedNotes"/>
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+    	<div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+    
+    	<header>
+    		<h3>About the PCF</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="images/header_how-to-use-this-app.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<section>
+	    			<h1>About the PCF:</h1>
+	    			<p>The Professional Capabilities Framework (PCF) is an overarching professional standards framework, developed by the Social Work Reform Board and now owned by The College of Social Work. The PCF:</p>
+	    			<ul>
+	    				<li>Sets out consistent expectations of social workers at every stage in their career.</li>
+	    				<li>Provides a backdrop to both initial social work education and continuing professional development after qualification.</li>
+	    				<li>Informs the design and implementation of the national career structure.</li>
+	    				<li>Gives social workers a framework around which to plan their careers and professional development.</li>
+	    			</ul>
+	    			<p>The PCF applies to all social workers in England (including independent social workers), in all roles and settings. Social workers in Wales, Northern Ireland and Scotland have their own frameworks and standards.</p>
+	    			<p>The PCF sets out the expectations of a student or social worker practising at each of nine levels, from student entry level to the Strategic Social Worker Level. The levels relate to the complexity of work that someone with the identified capabilities would be able to manage.</p>
+	    			<p>The PCF is divided into nine ‘domains’, or capability areas. These are:</p>
+	    			<ul>
+	    				<li>Professionalism</li>
+	    				<li>Values & Ethics</li>
+	    				<li>Diversity</li>
+	    				<li>Rights, Justice & Economic Wellbeing</li>
+	    				<li>Knowledge</li>
+	    				<li>Critical Reflection & Analysis</li>
+	    				<li>Intervention & Skills</li>
+	    				<li>Contexts & Organisations</li>
+	    				<li>Professional Leadership</li>
+	    			</ul>
+	    			<p>These domains should be seen as interdependent, not separate: they interact in professional practice, so there are overlaps between the domains, and many issues will be relevant to more than one domain. Moreover, understanding what a social worker does can only be complete by taking into account all nine domains. Assessing learning, performance and progression in relation to the PCF therefore requires an approach congruent with this framework.</p>
+	    			<p>This app focuses on the expectations of qualified social workers at two levels on the PCF: social worker and experienced social worker. It provides the opportunity for individuals to learn about those expectations. For practitioners, the app also sets out examples of the kinds of evidence which might be used to demonstrate that they meet the expectations.</p>
+	    			<p>For more information related to the PCF, please visit www.tcsw.org.uk.</p>
+	    			<p>© 2012 The College of Social Work. Updated versions of the PCF will be posted from time to time on the College website. These documents or parts of them may be copied for personal, non-commercial use and training purposes, provided the original source is acknowledged and this copyright statement retained.</p>
+    			</section>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="index.html" class="homeIcon"><img src="images/footer_home_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/helper.js"></script>
+
+    </body>
+</html>

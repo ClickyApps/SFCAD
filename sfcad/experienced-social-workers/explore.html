@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-explore' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-explore' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'experienced-social-workers-explore', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard explore">
+    
+    	<input type="hidden" id="savedNotes"/>
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+    
+    	<header>
+    		<h3>Experienced Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="wheel">
+    			<div class="triangles">
+		    		<div class="red selected" id="red">
+		    			<a href="">Professionalism</a>
+		    		</div>
+		    		<div class="orange" id="orange">
+		    			<a href="">Values & Ethics</a>
+		    		</div>
+		    		<div class="yellow" id="yellow">
+		    			<a href="">Diversity</a>
+		    		</div>
+		    		<div class="green" id="green">
+		    			<a href="">Rights & Justice</a>
+		    		</div>
+		    		<div class="lightBlue" id="lightBlue">
+		    			<a href="">Knowledge</a>
+		    		</div>
+		    		<div class="darkBlue" id="darkBlue">
+		    			<a href="">Critical Reflection</a>
+		    		</div>
+		    		<div class="pink" id="pink">
+		    			<a href="">Intervention & Skills</a>
+		    		</div>
+		    		<div class="purple" id="purple">
+		    			<a href="">Contexts & Orgs</a>
+		    		</div>
+		    		<div class="grey" id="grey">
+		    			<a href="">Professional Leadership</a>
+		    		</div>
+	    		</div><!-- trianges -->
+	    		<div class="controls">
+	    			<p>Use the arrows<br/>to choose an area</p>
+	    			<a href="" id="next">Next</a>
+	    			<a href="" id="prev">Prev</a>
+	    		</div><!-- controls -->
+	    		<span class="bottomShadow"></span>
+    		</div><!-- wheel -->
+    		<div class="contentArea">
+    			<div id="content-red" class="show">
+	    			<h1>Professionalism</h1>
+	    			<p>Identify and behave as a professional social worker, committed to professional development.</p>
+	    			<a href="professionalism.html" class="more">View Section</a>
+    			</div><!-- red -->
+    			<div id="content-orange">
+	    			<h1>Values and Ethics</h1>
+	    			<p>Apply social work ethical principles and values to guide professional practice.</p>
+	    			<a href="values-and-ethics.html" class="more">View Section</a>
+    			</div><!-- orange -->
+    			<div id="content-yellow">
+	    			<h1>Diversity</h1>
+	    			<p>Recognise diversity and apply anti-discriminatory and anti-oppressive principles in practice.</p>
+	    			<a href="diversity.html" class="more">View Section</a>
+    			</div><!-- yellow -->
+    			<div id="content-green">
+	    			<h1>Rights, Justice and Economic Wellbeing</h1>
+	    			<p>Advance human rights and promote social justice and economic well-being.</p>
+	    			<a href="rights-and-justice.html" class="more">View Section</a>
+    			</div><!-- green -->
+    			<div id="content-lightBlue">
+	    			<h1>Knowledge</h1>
+	    			<p>Apply knowledge of social sciences, law and social work practice theory.</p>
+	    			<a href="knowledge.html" class="more">View Section</a>
+    			</div><!-- lightBlue -->
+    			<div id="content-darkBlue">
+	    			<h1>Critical reflection and Analysis</h1>
+	    			<p>Apply critical reflection and analysis to inform and provide a rationale for professional decision-making.</p>
+	    			<a href="critical-reflection.html" class="more">View Section</a>
+    			</div><!-- darkBlue -->
+    			<div id="content-pink">
+	    			<h1>Intervention and Skills</h1>
+	    			<p>Use judgement and authority to intervene with individuals, families and communities to promote independence, provide support and prevent harm, neglect and abuse.</p>
+	    			<a href="intervention-and-skills.html" class="more">View Section</a>
+    			</div><!-- pink -->
+    			<div id="content-purple">
+	    			<h1>Contexts and Organisations</h1>
+	    			<p>Engage with, inform, and adapt to changing contexts that shape practice. Operate effectively within own organisational frameworks and contribute to the development of services and organisations. Operate effectively within multi-agency and inter-professional partnerships and settings.</p>
+	    			<a href="contexts-and-organisations.html" class="more">View Section</a>
+    			</div><!-- purple -->
+    			<div id="content-grey">
+	    			<h1>Professional Leadership</h1>
+	    			<p>Take responsibility for the professional learning and development of others through supervision, mentoring, assessing, research, teaching, leadership and management.</p>
+	    			<a href="professional-leadership.html" class="more">View Section</a>
+    			</div><!-- grey -->
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

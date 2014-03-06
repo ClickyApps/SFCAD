@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'social-workers-values-and-ethics' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'social-workers-values-and-ethics' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'social-workers-values-and-ethics', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<input type="hidden" id="savedNotes"/>
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+
+    	<header>
+    		<h3>Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<section>
+	    			<h1>Values and Ethics</h1>
+	    			<h6>Apply social work ethical principles and values to guide professional practice.</h6>
+	    			<p>Social workers have an obligation to conduct themselves ethically and to engage in ethical decision-making, including through partnership with people who use their services. Social workers are knowledgeable about the value base of their profession, its ethical standards and relevant law.</p>
+	    			<h3>Practitioners at this level should:</h3>
+	    			<ul>
+	    				<li>Demonstrate confident application of ethical reasoning to professional practice, rights and entitlements, questioning and challenging others using a legal and human rights framework.</li>
+	    				<li>Critically reflect on and manage the influence and impact of own and others’ values on professional practice.</li>
+	    				<li>Recognise and manage conflicting values and ethical dilemmas, in practice, using supervision and team discussion, questioning and challenging others, including those from other professions.</li>
+	    				<li>Negotiate and establish boundaries to underpin partnership work with service users, carers and their networks, using transparency and honesty.</li>
+	    				<li>Ensure practice is underpinned by policy, procedures and code of conduct to promote individuals rights to determine their own solutions, promoting problem-solving skills, whilst recognising how and when self-determination may be constrained (by the law).</li>
+	    				<li>Work to protect privacy and promote trust, whilst being able to justify, explain and take appropriate action when the right to privacy is over-ridden by professional or legal requirements.</li>
+	    			</ul>
+	    			<h3>Evidencing your capabilities:</h3>
+	    			<p>This domain is essentially about doing the right thing. Social workers are required to behave with probity, not only with each other and with people from other professions, but particularly with service users, since the value base of the profession recognises that service users are often the least powerful people in society. When social workers make decisions they must do so in a way which demonstrates social work’s moral principles. When evidencing this domain, you would do well to think about a case where you have had to struggle with making the right decision. The first capability statement says that you have to demonstrate ethical reasoning and so you will have to show how you weighed up the options available to you and how you came to a decision. Merely stating your decision would be insufficient. You should make at least some reference to social work values such as respect for human rights and self-determination.</p>
+	    			<p>Case work examples are probably the best type of evidence for this domain, particularly where there are competing demands. You should also situate yourself in the examples, discussing how you experienced the dilemma and how you drew on your social work values to find a way forward. Reference to supervision, case law and research is also appropriate.</p>
+    			</section>
+	    		<a href="values-and-ethics-example.html" class="more">Read example</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

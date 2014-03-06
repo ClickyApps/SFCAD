@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'social-workers-contexts-and-organisations' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'social-workers-contexts-and-organisations' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'social-workers-contexts-and-organisations', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<input type="hidden" id="savedNotes"/>
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+
+    	<header>
+    		<h3>Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<section>
+	    			<h1>Contexts and Organisations</h1>
+	    			<h6>Engage with, inform, and adapt to changing contexts that shape practice. Operate effectively within own organisational frameworks and contribute to the development of services and organisations. Operate effectively within multi-agency and inter-professional partnerships and settings.</h6>
+	    			<p>Social workers are informed about and pro-actively responsive to the challenges and opportunities that come with changing social contexts and constructs. They fulfil this responsibility in accordance with their professional values and ethics, both as individual professionals and as members of the organisation in which they work. They collaborate, inform and are informed by their work with others, inter-professionally and with communities.</p>
+	    			<h3>Practitioners at this level should:</h3>
+	    			<ul>
+	    				<li>Keep abreast of changing contexts at local and national level, and take account of these in practice.</li>
+	    				<li>Demonstrate the ability to work within your own organisation, and identify and begin to work with the relationship between the organisation, practice and wider changing contexts.</li>
+	    				<li>Work to and explain the relevant legal structures in the organisation, including basic case law; know when and how to access support and appropriate legal advice and consultation.</li>
+	    				<li>Explore, and identify how organisational practice can support good social work practice.</li>
+	    				<li>Keep abreast of changing roles in the organisation; recognise, value and engage with other specialist perspectives.</li>
+	    				<li>Be confident about your role in the team, working positively with others; draw on and contribute to team working and collaborative support wherever possible.</li>
+	    				<li>Take an active role in inter-professional and inter-agency work, building own network and collaborative working.</li>
+	    			</ul>
+	    			<h3>Evidencing your capabilities:</h3>
+	    			<p>This domain requires you to engage not only with your own organisation but also with wider social contexts and issues. These might include: changes to social demographics such as the expected increase in older people in society, or other social concerns such as youth unemployment, drug abuse, the rise in the incidence of childhood autism, the challenges presented by globalisation or the increase in use of information technology. You are advised to consider which social contexts and constructs are relevant to you and how you have responded to them. You should also think about how you carry out your responsibilities as a professional social worker in your organisation. The changing social contexts and constructs are likely to impact on your work in your organisation. Think about how you and your colleagues promote good social work practice in these circumstances.</p>
+	    			<p>There is a variety of evidence to draw on in this domain, since it involves many different issues in society which have an effect on service users and the provision of services. What is happening in your organisation is also a source of material. Try to explore those sources of evidence which perhaps combine social issues and organisational ones.</p>
+    			</section>
+	    		<a href="contexts-and-organisations-example.html" class="more">Read example</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

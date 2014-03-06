@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-rights-and-justice' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-rights-and-justice' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'experienced-social-workers-rights-and-justice', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+
+    	<header>
+    		<h3>Experienced Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<h1>Rights, Justice and Economic Wellbeing</h1>
+    			<h6>Advance human rights and promote social justice and economic well-being.</h6>
+    			<p>Social workers recognise the fundamental principles of human rights and equality, and that these are protected in national and international law, conventions and policies. They ensure these principles underpin their practice. Social workers understand the importance of using and contributing to case law and applying these rights in their own practice. They understand the effects of oppression, discrimination and poverty.</p>
+    			<ul>
+    				<li>Provide guidance and challenge to others about applying the principles of social justice, social inclusion and equality to decision-making</li>
+    				<li>Demonstrate ability to interpret and use current legislation and guidance to protect and/or advance people’s rights and entitlements, balancing use of different legislation to achieve the best outcomes; support colleagues (both inside and outside the organisation) to do so</li>
+    				<li>Be able to communicate legislative issues to other professionals and agencies</li>
+    				<li>Model best practice in applying human and civil rights, providing support to others and challenge where required</li>
+    				<li>Support others to enable individuals to access opportunities that may enhance their economic status (e.g. education, work, housing, health services & welfare benefits)</li>
+    				<li>Promote access to independent advocacy, ensuring best practice and critical review, and contribute to the evaluation of independent advocacy</li>
+    			</ul>
+    			<p>At the Experienced Social Worker level the emphasis is on you providing guidance and assistance to others so that they can promote human rights and social justice. You may also need to show that you are interpreting the law accurately with a significant grasp of primary legislation and case law.</p>
+    			<h3>The following case example illustrates the capability:</h3>
+    			<p>I have recently been reviewing two cases in my authority where service users have been denied an assessment because there are no resources available to meet their likely needs or where the assessment was not carried out properly.  In both cases the service users have complained and my role has been to review the complaint. In the first instance, Mrs J, who is 85, asked for some additional help at home but was refused an assessment because she already had three grown up daughters who provided almost around the clock care. In the second instance, Mr P, who has Alzheimer’s disease, was not properly consulted during the assessment although his carer was. It is clear to me that the threshold to trigger an assessment under the National Health Service and Community Care Act 1990 is fairly low and there are few instances where a denial of an assessment would be appropriate. Just because Mrs J already had family help at home, would be insufficient since the authority could not know beforehand what her needs were. Some case law has emphasized the right to an assessment (R v Bristol CC ex parte Penfold, 1 CCLR 315, 23 January 1998, QBD). I therefore suggested that the authority carries out an assessment and I have briefed the care managers to ensure everyone is clear about their obligations. In the second example, Mr P should have been consulted even though his dementia would not make the process easy. It would be up to the care manager to explore ways in which he could be consulted.</p>
+	    		<a href="rights-and-justice-example.html" class="more">Read example</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

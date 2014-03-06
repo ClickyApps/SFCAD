@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'how-to-use-this-app' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'how-to-use-this-app' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'how-to-use-this-app', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+				$(document).on('click', ".external", function (e) {
+				    e.preventDefault();
+				    var targetURL = $(this).attr("href");
+				    window.open(targetURL, "_system");
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard how">
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+    	<div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+    
+    	<header>
+    		<h3>How to use this app</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="images/header_how-to-use-this-app.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<h1>About the PCF:</h1>
+    			<h6>The Professional Capabilities Framework (PCF) is an overarching professional standards framework, developed by the Social Work Reform Board and now owned by The College of Social Work. The PCF:</h6>
+    			<ul>
+    				<li>1. Sets out consistent expectations of social workers at every stage in their career</li>
+    				<li>2. Provides a backdrop to both initial social work education and continuing professional development after qualification</li>
+    				<li>3. Informs the design and implementation of the national career structure</li>
+    				<li>4. Gives social workers a framework around which to plan their careers and professional development.</li>
+    			</ul>
+    			<p>The PCF applies to all social workers in England (including independent social workers), in all roles and settings. Social workers in Wales, Northern Ireland and Scotland,  have their own frameworks/ standards.</p>
+    			<p>The PCF sets out the expectations of a student or social worker practising at each of nine levels, from student to Newly Qualified Social Worker (NQSW) to the strategic social worker level. The levels relate to the complexity of work that someone with the identified capabilities would be able to manage.</p>
+    			<p>This app focuses on the expectations of qualified social workers at two levels: social worker and experienced social worker. It provides the opportunity for individuals to learn about those expectations and, for social workers, also sets out examples of the kinds of evidence which might be used to demonstrate that they meet the expectations.</p>
+    			<h1>How to use this app:</h1>
+    			<p>This app sets out the expectations of social workers practising at two levels in the PCF: social worker and experienced social worker. To view the capabilities, select a level and view the level descriptor. This paragraph describes the expected overall standard of capability of an individual practising at this level. Once you have read the level descriptor, progress to the ‘domain’ area. You will see a coloured fan which lists each of the nine capability domains within the PCF, from Professionalism and Values and Ethics to Critical Reflection and Analysis and Professional Leadership. Select your domain area to view the expectations (or ‘capability statements’) of that particular practice area. For social workers using this app, you will then have the opportunity to view examples of evidence you might use to demonstrate that you meet the expectations.</p>
+    			<p>Should you wish to make notes on the capabilities and evidence examples, select the speech bubble at the bottom of the screen. Select the envelope to email copies of the information to yourself.</p>
+    			<h1>More information:</h1>
+    			<p>In the coming year, we hope to add the remaining PCF levels to this app. For more information related to the PCF in the meantime, please visit <a href="http://www.tcsw.org.uk" class="external">www.tcsw.org.uk</a>.</p>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="index.html" class="homeIcon"><img src="images/footer_home_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/helper.js"></script>
+
+    </body>
+</html>

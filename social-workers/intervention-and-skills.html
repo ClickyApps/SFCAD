@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'social-workers-intervention-and-skills' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'social-workers-intervention-and-skills' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'social-workers-intervention-and-skills', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+
+    	<header>
+    		<h3>Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<h1>Intervention and Skills</h1>
+    			<h6>Use judgement and authority to intervene with individuals, families and communities to promote independence, provide support and prevent harm, neglect and abuse.</h6>
+    			<p>Social workers engage with individuals, families, groups and communities, working alongside people to assess and intervene. They enable effective relationships and are effective communicators, using appropriate skills. Using their professional judgement, they employ a range of interventions: promoting independence, providing support and protection, taking preventative action and ensuring safety whilst balancing rights and risks. They understand and take account of differentials in power, and are able to use authority appropriately. They evaluate their own practice and the outcomes for those they work with.</p>
+    			<ul>
+    				<li>Communicate with compassion and authority in challenging situations and with resistant individuals</li>
+    				<li>Routinely explain professional reasoning, judgements and decisions</li>
+    				<li>Engage effectively with people in complex situations, both short-term and building relationships over time</li>
+    				<li>Gather information so as to inform judgement for interventions in more complex situations and in response to challenge</li>
+    				<li>Use assessment procedures discerningly so as to inform judgement</li>
+    				<li>Develop a range of interventions; use them effectively and evaluate them in practice</li>
+    				<li>Expand intervention methods and demonstrate expertise in one or more specific methods relevant to your setting</li>
+    				<li>Make timely decisions when positive change is not happening</li>
+    				<li>Actively support and initiate community groups and networks, including professional ones</li>
+    				<li>Clearly report and record analysis and judgements,</li>
+    				<li>Demonstrate and promote appropriate information sharing</li>
+    				<li>Use contingency planning to anticipate complexity and changing circumstances</li>
+    				<li>Recognise and appropriately manage the authority inherent in your position</li>
+    				<li>Demonstrate confident and effective judgement about risk and accountability in your decisions</li>
+    				<li>Regularly undertake assessment and planning for safeguarding</li>
+    			</ul>
+    			<p>This capability requires you to demonstrate that you can engage with service users with a range of communication skills. You are advised to think carefully about the concept of engagement. Merely telling service users things would be insufficient. You should be able to show how you have developed a professional relationship with them, including when they show resistance, so that you fully understand their circumstances. It is also about how you then intervene to promote independence, provide support and protection, prevent unwanted outcomes or ensure safety. So good communication on its own would not be enough. Think about the purpose of your intervention. This is often set out in legislation. You should demonstrate how you have planned your intervention, used your authority and recorded what has happened.</p>
+    			<h3>The following example illustrates the approach you might take:</h3>
+    			<p>I started work with Jennifer about a year ago when her GP referred her to my team (Community Mental Health Team). She was 56, from Ireland and lived alone in a one bedroomed flat. She had a history of schizoaffective disorder and would sometimes completely fail to look after herself to the point where she would risk dying. When I first met her I was conscious of me being younger than her and of a different ethnicity (I am black Caribbean). I took the time to really listen to what she had to say including how she experienced her mental health problem. I would try to mirror what she said so that she knew I understood and I used my imagination to think about how she must have felt to be so vulnerable and distressed. At the same time I had to let her know what my duties were particularly as an Approved Mental Health worker. That early engagement was really helpful when later it became evident that her mental health problem was deteriorating. My task was to provide support and protection by firstly being someone who she could talk to about her mental health and coordinating the work of the wider team and, secondly, recognising when she would need protection. She would often not answer the door when I visited so I knew she was struggling to engage.  After a couple of attempts I eventually applied for Jennifer to be compulsorily admitted to hospital where should could receive more specialist and intensive help. A year later she is much improved and we are still able to explore together some of the problems her mental health generates for her and I think she appreciates me ‘sticking’ with her. My new task is to promote her independence which she is really enjoying.</p>
+	    		<a href="intervention-and-skills-example.html" class="more">Read example</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>

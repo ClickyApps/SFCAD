@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../img/touch/apple-touch-icon.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+				var drawContent = window.localStorage.getItem( 'experienced-social-workers-diversity' );
+				if ( drawContent == null ) {
+					$('#showNotes').removeClass('notesExist');
+				} else {
+					$('#showNotes').addClass('notesExist');
+				}
+	        	// Show Notes
+				$('#showNotes').click(function(){
+					var drawContent = window.localStorage.getItem( 'experienced-social-workers-diversity' );
+					$('#notesOverlay textarea').val(drawContent);
+					$('#notesOverlay').fadeIn('fast');
+					return false;
+				});
+				// Save Notes
+				$('#save').click(function(){
+					var saveContent = $('#notesOverlay textarea').val();
+					if ( saveContent == '' ) {
+						$('#showNotes').removeClass('notesExist');
+					} else {
+						$('#showNotes').addClass('notesExist');
+					}
+					window.localStorage.setItem( 'experienced-social-workers-diversity', saveContent);
+					$('#notesOverlay').fadeOut('fast');
+					return false;
+				});
+        	});
+        </script>        
+    </head>
+    <body class="standard details">
+    
+    	<div id="notesOverlay">
+    		<a href="" id="save">Save</a>
+	    	<h3>Your current notes:</h3>
+	    	<textarea placeholder="tap to add notes..."></textarea>
+	    </div><!-- #notesOverlay -->
+	    
+	    <div id="emailOverlay">
+    		<div class="holder">
+		    	<h3>Email a copy to yourself</h3>
+		    	<div class="formBox">	
+			    	<p class="success"><strong>Thank you.</strong> The email has successfully been sent to your email address.</p>
+			    	<p class="error"><strong>I’m sorry</strong> - there was an error in sending the email. Please try again below.</p>
+		    		<form action="" method="" id="emailPDF">
+			    		<label for="emailAddress">Enter your email address below:</label>
+			    		<input type="text" name="emailAddress" id="emailAddress" autocapitalize="off"/>
+			    		<input type="submit"/>
+		    		</form>
+		    	</div><!-- formBox -->
+			</div><!-- holder -->
+		    <a href="" id="cancel">Cancel</a>
+	    </div><!-- #emailOverlay -->
+
+    	<header>
+    		<h3>Experienced Social workers</h3>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+    	<div class="mainContent">
+    		<div class="headerImage">
+	    		<img src="../images/header_social-workers-professionalism.jpg"/>
+	    		<span class="bottomShadow"></span>
+    		</div><!-- headerImage -->
+    		<div class="contentArea">
+    			<h1>Diversity</h1>
+    			<h6>Recognise diversity and apply anti-discriminatory and anti-oppressive principles in practice.</h6>
+    			<p>Social workers understand that diversity characterises and shapes human experience and is critical to the formation of identity. Diversity is multi- dimensional and includes race, disability, class, economic status, age, sexuality, gender and transgender, faith and belief. Social workers appreciate that, as a consequence of difference, a person’s life experience may include oppression, marginalisation and alienation as well as privilege, power and acclaim, and are able to challenge appropriately.</p>
+    			<ul>
+    				<li>Inform, guide and model good practice in the application of understanding of identity and diversity to practice; identifying and taking up issues when principles of diversity are contravened in the organisation</li>
+    				<li>Model critically reflective practice and support others to recognise and challenge discrimination, identifying and referring breaches and limitations in the ability of your own or other organisations’ ability to advance equality and diversity and comply with the law</li>
+    				<li>Demonstrate and model the effective and positive use of power and authority, whilst recognising and providing guidance to others as to how it may be used oppressively</li>
+    			</ul>
+    			<p>At the Experienced Social Worker level, you will need to show that you practise as a role model especially challenging institutional discrimination when this arises in your own organisation or in others. You should be able to apply the law in respect of discrimination and equality and show others how to reflect on their practice and challenge oppression whenever it arises. You will be adept at using your authority appropriately.</p>
+    			<h3>The following illustration may help:</h3>
+    			<p>I work as an Approved Mental Health Professional (AMHP) in a busy inner city Early Intervention teamn early on-set psychosis. My case load is largely of young men who are currently experiencing their first episode of psychosis. Their lives are often in chaos when I become involved with family members struggling to cope with frequently bizarre behaviours. The young people and their families struggle with the stigma of mental health and this can sometimes have worse effects than the mental health problem itself. Terry, who is black, is 19 and is experiencing frequent auditory and visual hallucinations. He no longer has any friends and he would struggle to hold down a job. He spends most of his time alone at home ruminating in his room. His parents are very reluctant to acknowledge his difficulty and their own isolation is, at least in part, preventing them from accessing appropriate services. They have also said that services are not culturally appropriate in that they do not recognise the specific difficulties faced by young black men who have mental health problems. Terry and his family are somewhat typical in my service. Consequently, I campaigned to establish a support group for black service users to explore the stigma related to mental health problems and race and to find collective ways of overcoming its worst effects. I was able to demonstrate that in my service stigma for black service users can be very damaging and that we should try to do something about it particularly given the research evidence in this field (Crabtree, J et al (2010) Mental Health Support Groups, Stigma, and Self-Esteem: Positive and Negative Implications of Group Identification Journal of Social Issues, 66, 3, 553-569). I was concerned that the service would not be compliant with Disability Discrimination legislation if we did not provide a tailored service for families like Terry’s.  I have subsequently engaged the local radio station to organise some on-air discussions about the effects of mental health problems in the black community and especially the impact of stigma.</p>
+	    		<a href="diversity-example.html" class="more">Read example</a>
+    		</div><!-- contentArea -->
+    	</div><!-- mainContent -->
+    	
+    	<footer>
+    		<span class="topShadow"></span>
+    		<a href="explore.html" class="homeIcon"><img src="../images/footer_explore_icon.png" width="56"/></a>
+    		<a href="" id="showNotes" class="icon notes"></a>
+    		<a href="" id="showEmail" class="icon email"></a>
+    	</footer>
+    	
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+
+    </body>
+</html>
